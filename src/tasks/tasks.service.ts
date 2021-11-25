@@ -44,12 +44,7 @@ export class TasksService {
     task.status = status;
     return this.taskRepository.save(task);
   }
-
   /*
-  getAllTasks(): Task[] {
-    return this.tasks;
-  }
-
   getTasksWithFilters(filterDto: GetTasksFilterDto): Task[] {
     const { status, search } = filterDto;
     let tasks = this.getAllTasks();
